@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão que Gera Texto</title>
+    <style>
+        body {
+            font-size: 25px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        button {
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .conteiner {
+            background-color: white;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #texto {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .botoes-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 15px;
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+
+        <button onclick="mostrarTexto()" id="botaoInicial">Clique aqui</button>
+
+        <div id="texto"></div>
+
+        <!-- Novo contêiner para os dois botões -->
+        <div class="botoes-container" id="botoesExtras">
+            <button onclick="respostaSim()">Sim! 😁😎🤑</button>
+            <button onclick="respostaNao()">Não! 😡😡😭</button>
+        </div>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/330px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg">
+
+        <footer>
+            <p id="direitos">Direitos autorais: Miguel da Silva Lourenço.<br> Criador: Daniel Dimas Alves.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function mostrarTexto() {
+            document.getElementById("texto").innerText = "Professor deixa a gente ir para a quadra por favor🙏!";
+            document.getElementById("botaoInicial").style.display = "none";
+            document.getElementById("botoesExtras").style.display = "block";
+        }
+
+        function respostaSim() {
+            document.getElementById("texto").innerText = "Oba! Vamos jogar bola!⚽⚽⚽";
+        }
+
+        function respostaNao() {
+            document.getElementById("texto").innerText = "Noooo la lição nooo😭😭😭";
+        }
+    </script>
+</body>
+</html>
