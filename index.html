@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="google-site-verification" content="xNXVBVIkRvGFq_2sAxaPLfChseH4BGNuZj4xtMdhJoA" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu quero quadraaa</title>
+    <!-- estilheriza o css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Dados estruturados JSON-LD para o vídeo No la polizia-->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Título do vídeo no YouTube",
+        "description": "Aqui vai uma descrição bem completa do vídeo, com palavras-chave relevantes.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/PU59IUH7HrQ/maxresdefault.jpg",
+        "uploadDate": "2025-09-29",  
+        "embedUrl": "https://www.youtube.com/embed/PU59IUH7HrQ",
+        "contentUrl": "https://www.youtube.com/watch?v=PU59IUH7HrQ",
+        "duration": "PT#H#M#S"
+    }
+    </script>
+
+    <!-- Dados estruturados JSON-LD para o vídeo Neymar -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Título do vídeo no YouTube",
+        "description": "Aqui vai uma descrição bem completa do vídeo, com palavras-chave relevantes.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/4AwYxLFcX74/maxresdefault.jpg",
+        "uploadDate": "2025-09-29",  
+        "embedUrl": "https://www.youtube.com/embed/4AwYxLFcX74",
+        "contentUrl": "https://www.youtube.com/watch?v=4AwYxLFcX74",
+        "duration": "PT#H#M#S"
+    }
+    </script>
+</head>
+<body>
+    <!-- conteiner inicial -->
+    <div class="conteiner">
+    
+        <!-- botão inicial -->
+        <button onclick="mostrarTexto()" id="botaoInicial">Clique aqui</button>
+        <!-- lugar das perguntas -->
+        <div id="texto"></div>
+
+        <!-- botões de respostas -->
+        <div class="botoes-container" id="botoesExtras">
+            <button onclick="respostaSim()" id="sim">Sim! 😁😎🤑</button>
+            <button onclick="respostaNao()" id="não">Não! 😡😡😭</button>
+        </div>
+        <!-- imagem de futebol -->
+        <img id="imagemFutebol" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/330px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg">
+        <!-- rodapé -->
+        <footer>
+            <p id="direitos">Direitos autorais: Miguel da Silva Lourenço.<br> Criador: <a href="https://github.com/Dani1vscode">Daniel Dimas Alves.</a></p>
+        </footer>
+
+    <!-- Incorporação do vídeo do YouTube Neymar -->
+    <iframe id="neymar" width="400" height="250"
+        src="https://www.youtube.com/embed/4AwYxLFcX74"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+ 
+    <iframe id="polizia" width="400" height="250"
+        src="https://www.youtube.com/embed/PU59IUH7HrQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    </div>
+    <!-- estilheriza o JavaScript -->
+    <script src="javascript.js"></script>
+
+</body>
+</html>
