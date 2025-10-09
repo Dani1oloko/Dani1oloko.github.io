@@ -1,0 +1,198 @@
+       /* fundo da página */
+       body {
+            font-size: 25px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+        /* reset dos butões */
+        button {
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        /*quando mouse estiver em cima*/
+        button:hover {
+            background-color: orange;
+            scale: 1.05;
+            box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+        /* borda do conteinner */
+        .conteiner {
+            background-color: white;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height: 500px;
+            width: 550px;
+            position: relative;
+        }
+        /* pergunta/título */
+        #texto {
+            margin-top: 20px;
+            color: #333;
+        }
+        /* esconder os botões inicialmente */
+        .botoes-container {
+            display: none;
+            margin-top: 20px;
+        }
+        /* rodapé */
+        footer {
+            display: flex;
+            margin-top: 20px;
+            font-size: 15px;
+            border: 1px solid black;
+            background-color: lightgray;
+            border-radius: 15px;
+            position: absolute;
+            top: 425px;
+            right: 160px;
+        }
+        /* quando o mouse passar por cima do rodapé */
+        footer:hover {
+            transform: scale(1.02);
+            box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+        /* imagem */
+        img {
+            margin-top: 20px;
+            border-radius: 15px;
+            width: 300px;
+            height: auto;
+            box-shadow: 5px 5px 9px black;
+            position: absolute;
+            top: 175px;
+            right: 160px;
+        }
+        /* quando mouse passar em cima */
+        img:hover {
+            scale: 1.05;
+            box-shadow: 10px 10px 9px rgb(0, 0, 0);
+            transition: 0.3s;
+        }
+        /* botão inicial */
+        #botaoInicial {
+            position: absolute;
+            top: 75px;
+            right: 225px;
+        }
+        /* quando mouse passar por cima do link */
+        a:hover {
+            scale: 1.05;
+            text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+            color: blue;
+            text-decoration: none;
+        }
+        /* reset do link */
+        a {
+            text-decoration: none;
+        }
+        /* animação do botão */
+        @keyframes identifier {
+            0% {
+                transform: scale(1.1);
+                background-color: yellow;
+                wait: 1.5s;
+            }
+
+            50% {
+                transform: scale(1.1);
+                background-color: orange;
+                wait: 1.5s;
+            }
+
+            100% {
+                transform: scale(1.1);
+                background-color: rgb(255, 0, 0);
+                wait: 1.5s;
+            }
+        }
+        /* aplica a animação em todos os botões */
+        button:hover {
+            animation: identifier 0.5s infinite;
+        }
+        /* vídeos */
+        #neymar, #polizia {
+            display: none;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 9px lightgray;
+            position: absolute;
+            right: 36.5vw;
+            bottom: 15vw;
+        }
+        /* resolusão para celulares */
+        @media (max-width: 600px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                position: relative;
+            }
+            /* borda branca */
+            .conteiner {
+                width: 75%;
+                height: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 75vh;
+            }
+            /* pergunta/título */
+            button {
+                font-size: 16px;
+                padding: 5px 55px 5px 15px;
+                left: 18vh;
+                display: block;
+            }
+            /* imagem */
+            img {
+                left: 7.5vh;
+                width: 190px;
+                height: 250px;
+                position: absolute;
+            }
+            /* videos */
+            #neymar, #polizia {
+                width: 80%;
+                height: 300px;
+                right: 5vh;
+                bottom: 20vh;
+            }
+            /* rodapé */
+            footer {
+                font-size: 12px;
+                right: 6.5vh;
+                top: 475px;
+                font-size: 10px;
+                position: absolute;
+            }
+            /* centralização dos botões (fora o inicial) */
+            .botoes-container {
+                top: 75px;
+                position: absolute;
+            }
+            /* centralização do texto */
+            #texto {
+                top: 15px;
+                position: absolute;
+            }
+            /* centralização do botão inicial */
+            #botaoInicial {
+                position: absolute;
+                left: 13vh;
+            }
+        }
